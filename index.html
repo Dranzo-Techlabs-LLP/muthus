@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muthu's Event Management — Crafting Celebrations Since 1998</title>
+  <meta name="description" content="Muthu's Event Management — weddings, corporate events, live catering, stage & décor and celebrations crafted with care since 1998." />
+  <meta name="theme-color" content="#0d0b08" />
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img class="loader__logo" src="assets/logo.jpg" alt="" />
+      <div class="loader__count"><span id="loaderNum">0</span>%</div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== Scroll progress ===== -->
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===== Cursor ===== -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">View</span></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__brand" aria-label="Muthu's Event Management home">
+      <img src="assets/logo.jpg" alt="Muthu's Event Management logo" />
+      <span>Muthu's<em>Events</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#stories">Stories</a>
+    </nav>
+    <a href="#contact" class="btn btn--gold nav__cta"><span>Plan an event</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#stories">Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="menu__foot">Since 1998 · Crafting celebrations</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="assets/gallery/crowd.jpg" alt="" />
+        <div class="hero__shade"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow"><span class="dot"></span> Event Management · Since 1998</p>
+        <div class="hero__headline">
+          <h1 class="hero__title">
+            <span class="line"><span>We turn</span></span>
+            <span class="line"><span>moments into</span></span>
+            <span class="line"><span><em>memories.</em></span></span>
+          </h1>
+          <a href="#about" class="badge" aria-label="Scroll to about">
+            <svg viewBox="0 0 200 200" class="badge__ring" aria-hidden="true">
+              <defs><path id="circlePath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+              <text><textPath href="#circlePath" textLength="486" lengthAdjust="spacing">MUTHU'S EVENT MANAGEMENT • SINCE 1998 • </textPath></text>
+            </svg>
+            <img src="assets/logo.jpg" alt="" class="badge__logo" />
+          </a>
+        </div>
+
+        <div class="hero__bottom">
+          <p class="hero__sub">Weddings, corporate galas, live-fire catering and grand stage productions — designed, managed and delivered end to end by a team that has been doing it for over 25 years.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--gold magnetic"><span>Start planning</span></a>
+            <a href="#work" class="btn btn--ghost magnetic"><span>See our work</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <section class="marquee" aria-label="Our specialities">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Weddings</span><b>✦</b><span>Corporate Events</span><b>✦</b><span>Live BBQ Catering</span><b>✦</b><span>Stage &amp; Décor</span><b>✦</b><span>Birthdays</span><b>✦</b><span>Concerts</span><b>✦</b>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Weddings</span><b>✦</b><span>Corporate Events</span><b>✦</b><span>Live BBQ Catering</span><b>✦</b><span>Stage &amp; Décor</span><b>✦</b><span>Birthdays</span><b>✦</b><span>Concerts</span><b>✦</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Statement ===== -->
+    <section class="statement">
+      <p class="eyebrow">( Our philosophy )</p>
+      <p class="statement__text" data-words>Every celebration tells a story. For more than two decades we have listened closely, planned obsessively and sweated every detail — so that on the day, all you have to do is be present and enjoy it.</p>
+    </section>
+
+    <!-- ===== About / Founder ===== -->
+    <section class="about" id="about">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__emblem">
+            <img src="assets/logo-founder.png" alt="Muthu, founder of Muthu's Event Management, featured in the company emblem — Since 1998" />
+          </div>
+          <div class="about__tag">Founder &amp; Lead Planner</div>
+        </div>
+
+        <div class="about__copy">
+          <p class="eyebrow eyebrow--dark">( About Muthu's )</p>
+          <h2 class="h2 reveal-lines">A legacy of <em>celebration</em>, built one event at a time.</h2>
+          <p class="fade-up">What started in 1998 as a small catering outfit with a single grill has grown into a full-service event company trusted by families and businesses alike. Muthu still walks every venue, tastes every menu and stays until the last guest leaves.</p>
+          <p class="fade-up">Our promise is simple: personal attention, honest pricing and flawless execution — whether it's an intimate gathering of fifty or a grand affair for five thousand.</p>
+
+          <div class="stats">
+            <div class="stat"><strong><span class="count" data-to="27">0</span>+</strong><small>Years of experience</small></div>
+            <div class="stat"><strong><span class="count" data-to="5000">0</span>+</strong><small>Events delivered</small></div>
+            <div class="stat"><strong><span class="count" data-to="120">0</span>+</strong><small>Team members</small></div>
+            <div class="stat"><strong><span class="count" data-to="98">0</span>%</strong><small>Clients who return</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Zoom reveal ===== -->
+    <section class="zoom" aria-label="Since 1998">
+      <div class="zoom__pin">
+        <div class="zoom__media">
+          <img src="assets/gallery/banquet.jpg" alt="Elegant banquet table dressed with flowers and glassware" loading="lazy" />
+          <div class="zoom__shade"></div>
+        </div>
+        <div class="zoom__words" aria-hidden="true"><span>Since</span><span>1998</span></div>
+        <div class="zoom__caption">
+          <p class="eyebrow">( Our legacy )</p>
+          <h2 class="zoom__title">27 years. 5,000+ celebrations.<br />One promise — <em>unforgettable.</em></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services (horizontal) ===== -->
+    <section class="services" id="services">
+      <div class="services__pin">
+        <div class="services__head">
+          <p class="eyebrow">( What we do )</p>
+          <h2 class="h2">Services crafted<br />for every <em>occasion</em></h2>
+          <p class="services__hint">Scroll to explore →</p>
+        </div>
+        <div class="services__track">
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/wedding.jpg" alt="Bride holding a bouquet in warm light" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">01</span><h3>Weddings</h3><p>From mehendi to reception — décor, rituals, guest management and stage, handled with grace.</p></div>
+          </article>
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/conference.jpg" alt="Audience seated at a corporate conference" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">02</span><h3>Corporate Events</h3><p>Conferences, product launches, award nights and offsites run on time and on brand.</p></div>
+          </article>
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/catering.jpg" alt="Buffet catering spread in chafing dishes" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">03</span><h3>Catering &amp; Live BBQ</h3><p>Our roots. Live-fire grills, traditional feasts and curated menus your guests will talk about.</p></div>
+          </article>
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/banquet.jpg" alt="Banquet table set with flowers and glassware" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">04</span><h3>Stage &amp; Décor</h3><p>Florals, lighting, mandaps and themed sets designed in-house and built to impress.</p></div>
+          </article>
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/balloons.jpg" alt="Colourful balloons at a party" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">05</span><h3>Birthdays &amp; Parties</h3><p>Milestone birthdays, anniversaries and private parties full of colour and surprise.</p></div>
+          </article>
+          <article class="card" data-cursor="Explore">
+            <div class="card__img"><img src="assets/gallery/concert.jpg" alt="Crowd at a concert with stage lights" loading="lazy" /></div>
+            <div class="card__body"><span class="card__num">06</span><h3>Concerts &amp; Shows</h3><p>Sound, light, artist coordination and crowd management for live entertainment.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="work" id="work">
+      <div class="work__head">
+        <p class="eyebrow">( Selected moments )</p>
+        <h2 class="h2 reveal-lines">Moments we've <em>made</em></h2>
+      </div>
+      <div class="bento">
+        <figure class="tile tile--a" data-cursor="View"><div class="tile__img"><img src="assets/gallery/party.jpg" alt="Confetti falling over a concert crowd" loading="lazy" /></div><figcaption>Annual Gala Night</figcaption></figure>
+        <figure class="tile tile--b" data-cursor="View"><div class="tile__img"><img src="assets/gallery/plated.jpg" alt="Plated gourmet appetiser with wine" loading="lazy" /></div><figcaption>Curated Dining</figcaption></figure>
+        <figure class="tile tile--c" data-cursor="View"><div class="tile__img"><img src="assets/gallery/dining.jpg" alt="Guests enjoying a fine dining dinner" loading="lazy" /></div><figcaption>Reception Dinner</figcaption></figure>
+        <figure class="tile tile--d" data-cursor="View"><div class="tile__img"><img src="assets/gallery/confetti.jpg" alt="Colourful confetti over a festival crowd" loading="lazy" /></div><figcaption>Music Festival</figcaption></figure>
+        <figure class="tile tile--e" data-cursor="View"><div class="tile__img"><img src="assets/gallery/wedding.jpg" alt="Wedding couple with bouquet" loading="lazy" /></div><figcaption>Sunset Wedding</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section class="process" id="process">
+      <div class="process__head">
+        <p class="eyebrow">( How we work )</p>
+        <h2 class="h2 reveal-lines">From first call to <em>final toast</em></h2>
+      </div>
+      <div class="steps">
+        <div class="steps__line"><span></span></div>
+        <div class="step">
+          <span class="step__dot"></span>
+          <span class="step__num">01</span>
+          <h3>Listen</h3>
+          <p>We sit down with you to understand the occasion, the guests, the budget and the feeling you want.</p>
+        </div>
+        <div class="step">
+          <span class="step__dot"></span>
+          <span class="step__num">02</span>
+          <h3>Design</h3>
+          <p>Themes, menus, layouts and timelines — presented as a clear plan with transparent pricing.</p>
+        </div>
+        <div class="step">
+          <span class="step__dot"></span>
+          <span class="step__num">03</span>
+          <h3>Prepare</h3>
+          <p>Vendors booked, sets built, rehearsals run. One dedicated coordinator keeps you updated.</p>
+        </div>
+        <div class="step">
+          <span class="step__dot"></span>
+          <span class="step__num">04</span>
+          <h3>Celebrate</h3>
+          <p>Our crew runs the day behind the scenes, so you can be fully present with your guests.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials (stacked) ===== -->
+    <section class="stories" id="stories">
+      <div class="stories__head">
+        <p class="eyebrow">( Kind words )</p>
+        <h2 class="h2 reveal-lines">Stories from our <em>clients</em></h2>
+      </div>
+      <div class="stack">
+        <blockquote class="quote">
+          <p>“Muthu and his team handled our daughter's wedding for 1,200 guests and we didn't have to worry about a single thing. The food is still being talked about.”</p>
+          <footer><span class="quote__avatar">R</span><div><strong>Ravi &amp; Lakshmi</strong><small>Wedding · 1,200 guests</small></div></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Our annual awards night was seamless — stage, sound, catering and timing were spot on. They've been our go-to partner for six years now.”</p>
+          <footer><span class="quote__avatar">A</span><div><strong>Anitha Menon</strong><small>HR Head · Corporate Gala</small></div></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“The live BBQ counter stole the show at my 50th. Warm, professional people who genuinely care about getting it right.”</p>
+          <footer><span class="quote__avatar">S</span><div><strong>Suresh Kumar</strong><small>50th Birthday Celebration</small></div></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== CTA / Contact ===== -->
+    <section class="contact" id="contact">
+      <div class="contact__big" aria-hidden="true"><span>Let's</span> <em>celebrate</em></div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow">( Get in touch )</p>
+          <h2 class="h2 reveal-lines">Tell us about your <em>next event</em></h2>
+          <p class="fade-up">Share a few details and we'll get back within 24 hours with ideas and a no-obligation quote.</p>
+          <ul class="contact__list fade-up">
+            <li><small>Call / WhatsApp</small><a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><small>Email</small><a href="mailto:hello@muthusevents.com">hello@muthusevents.com</a></li>
+            <li><small>Studio</small><span>Your address, City, State</span></li>
+          </ul>
+        </div>
+        <form class="form fade-up" id="contactForm" novalidate>
+          <div class="field"><input id="f-name" name="name" required placeholder=" " autocomplete="name" /><label for="f-name">Your name</label></div>
+          <div class="field"><input id="f-phone" name="phone" type="tel" required placeholder=" " autocomplete="tel" /><label for="f-phone">Phone number</label></div>
+          <div class="field field--select">
+            <select id="f-type" name="type" required>
+              <option value="" disabled selected hidden></option>
+              <option>Wedding</option><option>Corporate event</option><option>Catering / Live BBQ</option><option>Birthday / Party</option><option>Concert / Show</option><option>Something else</option>
+            </select>
+            <label for="f-type">Type of event</label>
+          </div>
+          <div class="field"><input id="f-date" name="date" type="text" placeholder=" " onfocus="this.type='date'" /><label for="f-date">Event date (approx.)</label></div>
+          <div class="field field--full"><textarea id="f-msg" name="message" rows="3" placeholder=" "></textarea><label for="f-msg">Guests, venue, ideas…</label></div>
+          <button type="submit" class="btn btn--gold btn--lg magnetic"><span>Send enquiry</span></button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <img src="assets/logo.jpg" alt="Muthu's Event Management emblem" class="footer__logo" />
+      <p>Crafting celebrations<br />with heart since 1998.</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a>
+      </nav>
+      <nav class="footer__nav" aria-label="Social">
+        <a href="#" rel="noopener">Instagram</a><a href="#" rel="noopener">Facebook</a><a href="#" rel="noopener">YouTube</a>
+      </nav>
+    </div>
+    <div class="footer__word" aria-hidden="true">
+      <div class="footer__word-inner"><span>M</span><span>U</span><span>T</span><span>H</span><span>U</span><span>’</span><span>S</span></div>
+    </div>
+    <div class="footer__bottom">
+      <small>© <span id="year"></span> Muthu's Event Management. All rights reserved.</small>
+      <a href="#top" class="footer__up">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
