@@ -63,7 +63,8 @@
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---------- Contact form (front-end only) ---------- */
+  /* ---------- Contact form → WhatsApp ---------- */
+  const WHATSAPP_NUMBER = '966510807449';
   const form = $('#contactForm');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -75,8 +76,23 @@
     });
     const status = $('.form__status', form);
     if (!ok) { status.textContent = 'Please fill in your name, phone and event type.'; return; }
-    const name = form.elements.name.value.trim().split(' ')[0];
-    status.textContent = `Thank you, ${name}! We'll be in touch within 24 hours.`;
+    const f = form.elements;
+    const text = [
+      "Hello Muthu's Event Management, I'd like to enquire about an event.",
+      '',
+      `Name: ${f.name.value.trim()}`,
+      `Phone: ${f.phone.value.trim()}`,
+      `Event type: ${f.type.value}`,
+      f.date.value ? `Event date: ${f.date.value}` : null,
+      f.message.value.trim() ? `Details: ${f.message.value.trim()}` : null,
+    ].filter((line) => line !== null).join('\n');
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    // Popup blocked (common in in-app browsers) → open WhatsApp in this tab instead
+    const win = window.open(url, '_blank');
+    if (win) win.opener = null;
+    else window.location.href = url;
+    const name = f.name.value.trim().split(' ')[0];
+    status.textContent = `Thank you, ${name}! WhatsApp is opening with your enquiry — just press send.`;
     form.reset();
   });
 
